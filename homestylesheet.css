@@ -1,0 +1,17 @@
+.centerit{align-self: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;}
+
+.textbox{background-color: lightgray;
+    border: solid black 2px;
+    padding: 1rem;
+}
+
+.leftspacing{padding-left: 2em;}
+
+.smallertext{font-size: .65rem;}
+
+.Images{
+    width: 70%;
+}

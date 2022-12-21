@@ -1,0 +1,16 @@
+.centerit{align-self: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;}
+
+.spash{background-color: red;
+    border: solid black 2px;
+    padding: 1rem;}
+
+.carroll{background-color: orangered;
+    border: solid blue 2px;
+    padding: 1rem;}
+
+    .Images{
+        width: 10%;
+    }
