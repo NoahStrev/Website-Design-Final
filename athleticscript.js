@@ -1,0 +1,27 @@
+$(document).ready(function(){
+    $("article.Soccer").hide();
+    $("article.Football").hide();
+    $("article.Track").hide();
+    $("article.Basketball").hide();
+    $("article.CarrollFootball").hide();
+    $("article.CarrollTrack").hide();
+
+    $("p.Soccer").click(function(){
+        $("article.Soccer").toggle();
+    });
+    $("p.Football").click(function(){
+        $("article.Football").toggle();
+    });
+    $("p.Track").click(function(){
+        $("article.Track").toggle();
+    });
+    $("p.Basketball").click(function(){
+        $("article.Basketball").toggle();
+    });
+    $("p.CarrollFootball").click(function(){
+        $("article.CarrollFootball").toggle();
+    });
+    $("p.CarrollTrack").click(function(){
+        $("article.CarrollTrack").toggle();
+    });
+})
