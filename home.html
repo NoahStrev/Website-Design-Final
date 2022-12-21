@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Noah Streveler-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"crossorigin="anonymous"></script>
+    <script src="homescript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="icon" type="image/jpg" href="Images/Point.png">
+    <link rel="stylesheet" href="homestylesheet.css">
+
+</head>
+<body onLoad="getTemp()">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse collapse"  id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="home.html">Stevens Point</a>
+                <a class="nav-item nav-link active" href="athletics.html">Athletics</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <img class="Images" src="Images/DowntownPoint.jpg" alt="UWSP Logo">
+            </div>
+            <div class="col-md-8">
+                <h1 class="centerit">
+                    Stevens Point, Wisconsin
+                </h1>
+            </div>
+            <div class="col-md-2">
+                <img class="Images" src="Images/UWSP.jpg" alt="UWSP Logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4 athletics">
+                <h2 class="centerit">The Town</h2>
+                <div class="textbox">
+                    <h3>Click on the Mini Links! </h3>
+                    <section>
+                        <div class="leftspacing">
+                            <p class="Background">A General Backstory</p>
+                            <div class="smallertext">
+                                <article class="Background">
+                                    Stevens Point is located in central Wisconsin along the Wisconsin River in Portage County. Two years after the Menominee Treaty of 1836, George Stevens traveled the Wisconsin River looking for opportunities in the growing lumber industry. Stevens used the Stevens Point area as a strategic stopping and storage place during his travels. Although he had no permanent connection to the place, Stevens' name was adopted for the city that was eventually established there.
+                                </article>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="leftspacing">
+                            <p class="Politos">Politos</p>
+                            <div class="smallertext">
+                                <article class="Politos">
+                                    Polito's Pizza started in 2007 in Stevens Point and serves pizza by the slice in a variety of options, from pepperoni to Philly cheese steak, mac & cheese and buffalo chicken. The toppings for whole pizzas are pepperoni, green pepper, Canadian bacon, onion, mushroom, sausage, black olives, chicken, shaved angus, bacon, tomato, banana pepper, hot giardiniera, pineapple, basil, meatball, ground beef, jalapeno, cheddar and garlic.
+                                </article>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="leftspacing">
+                            <p class="Brewery">The Brewery</p>
+                            <div class="smallertext">
+                                <article class="Brewery">
+                                    The company was founded in 1857 by George Ruder and Frank Wahle. In 1864, the company provided its beer to the troops during the American Civil War. The brewery was subsequently sold to Andrew and Jacob Lutz in 1867. The Lutz family continued operations until it was sold to Gustav Kuenzel in 1897. The company was then organized as the Gustav Kuenzel Brewing Company in 1901. The following year, it was renamed the Stevens Point Brewing Company.
+                                </article>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="leftspacing">
+                            <p class="UWSP">UWSP</p>
+                            <div class="smallertext">
+                                <article class="UWSP">
+                                    The University of Wisconsin-Stevens Point, opening as the Stevens Point Normal School in 1894, became the first university in the nation to offer a major in conservation. The school is still focused on the environment today, with courses in forestry, water, and wildlife sciences.
+                                </article>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="leftspacing">
+                            <p class="Video">An Information Video</p>
+                            <div class="smallertext">
+                                <article class="Video">
+                                    <video width="266" height="200" autoplay muted>
+                                        <source src="Images/Wisconsin Hometown Stories Stevens Point.mp4" type="video/mp4">
+                                        Your browser does not support this video
+                                    </video>
+                                    https://www.youtube.com/watch?v=ns_7nlxi9f4
+                                </article>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="leftspacing">
+                            <p class="Weather">The Current Weather in Point</p>
+                            <div class="smallertext">
+                                <article class="Weather">
+                                    <div id="temp"></div>
+                                </article>
+                            </div>
+                            <hr>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4 point">
+                <h2 class="centerit">The School</h2>
+                <div class="textbox">
+                    UWSP is one of the best learning environments in the Midwest. Enter in your information here, and it will see, based on previous years, if you would get into the school!
+                    <br/><br/>
+                    <form method="post" onsubmit="return validateForm(this);" enctype="application/x-www-form-urlencoded">
+                        <label for="firstname">First Name:</label>
+                        <input name="firstname" id="firstname" type="text" required/>
+                        
+                        <br/><br/>
+                        <label for="lastname">Last Name:</label>
+                        <input name="lastname" id="lastname" type="text" required/>
+                        
+                        <br/><br/>
+                        <label for="GPA">Unweighted GPA:</label>
+                        <input name="GPA" id="GPA" type="number" min="0" max="4" step="0.001" required/>
+                        
+                        <br/><br/>
+                        <label for="ACT">ACT:</label>
+                        <input name="ACT" id="ACT" type="number" min="1" max="36" required/>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                    <br/><br/>
+                    <div id="note"></div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        </div>
+        <div class="row centerit">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="box" id="text">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
